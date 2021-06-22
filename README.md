@@ -29,7 +29,7 @@ validate(item, schema)
 The ```validate``` function return true if it passes and false if it doesn't.
 
 ### validate key
-The first task of the valid function is to check if the keys of the data and data correspond. If not then the following error is given. 
+The first task of the valid function is to check if the keys of the schema and data correspond. If not then the following error is given. 
 
 For this example, the keys in the schema are misspelled.
 ```javascript
