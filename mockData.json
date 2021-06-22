@@ -1,0 +1,9 @@
+[
+  {
+    "name": "James",
+    "age": 25,
+    "siblings": ["Johnnathan"],
+    "metaData": {},
+    "active": true
+  }
+]

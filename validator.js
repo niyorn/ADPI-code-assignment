@@ -41,12 +41,14 @@ const validateObjectType = (data, schema) => {
           `${property} is ${typeInSchema} in schema, but saw ${typeInData}`
         );
         valid = false;
+        break;
       }
     } else if (typeInData !== typeInSchema) {
       console.error(
         `${property} is ${typeInSchema} in schema, but saw ${typeInData}`
       );
       valid = false;
+      break;
     }
   }
 
