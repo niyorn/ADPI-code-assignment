@@ -11,11 +11,11 @@ const schema = {
 
 //Mock API Call
 fetch("./mockData.json")
-.then(res => res.json())
-.then(data => {
-    for(let item of data) {
-        if(validate(item, schema)){
-            console.log("valide")
-        }
+  .then((res) => res.json())
+  .then((data) => {
+    for (let item of data) {
+      if (validate(item, schema)) {
+        console.log("validate");
+      }
     }
-})
+  });

@@ -1,4 +1,4 @@
-//Valide if key and type match
+//validate if key and type match
 const validate = (data, schema) => {
   if (validateObjectKey(data, schema)) {
     if (validateObjectType(data, schema)) {
@@ -26,7 +26,7 @@ const validateObjectKey = (data, schema) => {
 
 //Check if type in schema and data match
 const validateObjectType = (data, schema) => {
-  let valid = true;
+  let validate = true;
 
   for (const property in schema) {
     const typeInSchema = schema[property];
@@ -40,19 +40,19 @@ const validateObjectType = (data, schema) => {
         console.error(
           `${property} is ${typeInSchema} in schema, but saw ${typeInData}`
         );
-        valid = false;
+        validate = false;
         break;
       }
     } else if (typeInData !== typeInSchema) {
       console.error(
         `${property} is ${typeInSchema} in schema, but saw ${typeInData}`
       );
-      valid = false;
+      validate = false;
       break;
     }
   }
 
-  return valid;
+  return validate;
 };
 
 export { validate };
