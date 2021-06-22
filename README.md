@@ -35,11 +35,11 @@ For this example, the keys in the schema are misspelled.
 ```javascript
 //Schema to validate the data with (misspelled)
 const schema = {
-  name: "string",
+  namess: "string",
   age: "number",
   siblings: "array",
   metaData: "object",
-  active: "boolean",
+  activess: "boolean",
 };
 ```
 __Error__
